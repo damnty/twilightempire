@@ -12,6 +12,7 @@ body {
     min-height: 100vh;
     font-family: 'Space Grotesk', sans-serif;
     margin: 0px;
+    hyphens: auto;
 }
 
 .main-nav {
@@ -22,10 +23,13 @@ body {
     border: 0px rgba(0, 0, 0, 0);
     position: fixed;
     width: 100%;
+    text-align: center;
 }
 
 .main-nav li {
     display: inline-block;
+    width: 24%;
+    justify-content: space-between;
 }
 
 .main-nav li a {
@@ -33,7 +37,6 @@ body {
     font-weight: bold;
     font-size: 18px;
     text-decoration: none;
-    padding: 5px 181px;
 }
 
 .main-nav li a:hover {
@@ -130,7 +133,7 @@ body {
     border: 1px solid rgba(0, 255, 13, 0);
     border-radius: 10px;
     width: 99%;
-    height: 400px;
+    height: fit-content;
     margin: 10px;
     display: flex;
 }
@@ -139,6 +142,7 @@ body {
     border: 0px solid #fca55f;
     border-radius: 10px 0px 0px 10px;
     height: 100%;
+    min-height: 400px; /* not sure if that makes a difference, we need to try. Eventually the line can be removed. */
     width: 400px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -149,6 +153,7 @@ body {
     border: 0px solid #fca55f;
     border-radius: 0px 10px 10px 0px;
     height: 100%;
+    min-height: 400px;  /* not sure if that makes a difference, we need to try. Eventually the line can be removed. */
     width: 400px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -207,7 +212,7 @@ body {
     text-align: right;
 }
 
-
+/* News: Headlines */
 .card-right h3,
 .card-right2 h3 {
     font-size: 40px;
@@ -215,19 +220,21 @@ body {
     margin-bottom: 25px;
 }
 
+/* News: text */
 .card-right p,
 .card-right2 p {
     font-size: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 
+/* News: link */
 .card-right a,
 .classes-bottom a,
 .card-right2 a {
     color: #fca55f;
     text-decoration: none;
     font-weight: bold;
-    padding-top: 30px;
+    margin-bottom: 25px;
 
 }
 
@@ -245,7 +252,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    
 }
 
 .main-classes h2 {
@@ -262,28 +269,30 @@ body {
 
 .classes-container {
     border: 5px solid rgba(255, 0, 0, 0);
-    min-height: 100%;
+    height: fit-content;
     padding: 10px;
+    justify-content:flex-start;
 }
 
 .classes {
     border: 2px solid rgba(0, 0, 255, 0);
     background-color: rgba(240, 248, 255, 0.103);
     border-radius: 8px;
-    width: 15%;
+    width: 14.3%;
     height: 800px;
     margin: 10px;
     display: inline-block;
-
+    height: fit-content;
 }
 
 .classes-top {
     border: 2px solid rgba(255, 0, 0, 0);
     border-radius: 10px;
-    height: 80%;
+    height: 600px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    margin-top: 0px;
 }
 
 .classes-01-img {
@@ -317,6 +326,26 @@ body {
     padding-top: 0px;
     padding-bottom: 10px;
 
+}
+
+/* Classes Responsive  */
+
+@media (max-width: 1500px) {
+    .classes {
+      width: 31%;
+    }
+}
+
+@media (max-width: 1150px) {
+    .classes {
+      width: 47%;
+    }
+}
+
+@media (max-width: 876px) {
+    .classes {
+      width: 96%;
+    }
 }
 
 .map-theempire {
