@@ -20,7 +20,8 @@ body {
     min-height: 100vh;
     font-family: 'Space Grotesk', sans-serif;
     margin: 0px;
-    height: 100%
+    height: 100%;
+    hyphens: auto;
 }
 
 .containerclass {
@@ -49,6 +50,7 @@ body {
 .splitfour:hover {
     content-visibility: visible;
     height: fit-content;
+    width: fit-content;
 }
 
 .subclassname {
@@ -83,13 +85,13 @@ body {
 .top-container {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-bottom: 4px;
 }
 
 .icon {
     background-image: url('https://cdn.discordapp.com/attachments/1050792777660780544/1084255761938522233/neptuneboy666_videgame_simple_2d_skill_icon_the_skill_Dual-wiel_cd2120bd-02e1-4025-858f-5fa386d0f006.png');
-    height: 100px;
-    width: 100px;
+    height: 90px;
+    width: 90px;
     background-size: cover;
     font-style: bold;
     color: azure;
@@ -99,11 +101,12 @@ body {
     color: azure;
     font-weight: bold;
     height: 100px;
-    width: 30%;
+    width: max-content;
     font-size: 200%;
     text-align: left;
     margin: auto;
     padding-left: 10px;
+    margin-left: 0px;
     text-shadow: black;
 }
 
@@ -111,19 +114,18 @@ body {
     color: azure;
     font-weight: bold;
     height: 100px;
-    width: 30%;
     font-size: 400%;
-    text-align: left;
+    text-align: right;
 }
 
 .lvl {
     color: azure;
     font-weight: bold;
     height: 100px;
-    width: 30%;
     font-size: 100%;
-    padding-left: 70px;
+    padding-left: 7px;
     padding-right: 0px;
+    text-align: right;
 }
 
 .description {
@@ -131,14 +133,13 @@ body {
     text-align: left;
     border-radius: 2%;
     margin: auto;
-    padding-top: 5px;
 
 }
 
 /*                 LEFT STUFF                */
 .top-containerLeft {
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 4px;
 }
 
 .lvlLeft {
@@ -169,7 +170,7 @@ body {
     color: azure;
     font-weight: bold;
     height: 100px;
-    width: 30%;
+    width: max-content;
     font-size: 200%;
     text-align: left;
     margin-left: 0px;
@@ -195,13 +196,13 @@ body {
 
 #DuelistSwashbuckler {
     background-image: url('https://cdn.discordapp.com/attachments/1050792777660780544/1084518755406712952/neptuneboy666_front_full_body_beautiful_male_warrior_light_armo_8eb4ef34-c9cd-48f8-ba8c-71c511368d0d.png.jpg');
-    background-size: 124%;
+    background-size: cover;
     background-position: left;
 }
 
 #GladiatorExecutioner {
     background-image: url('https://cdn.discordapp.com/attachments/1050792777660780544/1084518576477704292/neptuneboy666_front_full_body_athletic_male_warrior_light_armor_626514af-26d9-4dad-8229-391f99fc362b.png.jpg');
-    background-size: 155%;
+    background-size: cover;
     background-position: right;
 }
 
